@@ -4,13 +4,24 @@
 	box-sizing: border-box;
 }
 
+body {
+	font-family: sans-serif;
+}
+
+h1 {
+	font-weight: normal;
+	padding-bottom: 0.2em;
+	border-bottom: 1px solid #CCC;
+	margin-bottom: 1em;
+}
+
 img {
 	vertical-align: middle; /* removes extra spacing below the image */
 }
 
 .gallery {
 	max-width: 50em;
-	margin: 0 auto;
+	margin: 1em auto;
 }
 
 .photo-gallery {
