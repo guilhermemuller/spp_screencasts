@@ -8,10 +8,15 @@ body {
 
 .example1 {
 	counter-reset: section;
+	/* reset it to another value */
+	/* counter-reset: section -1; */
 }
 
 .example1 h2::before {
 	counter-increment: section;
+	/* increment it by another value */
+	/* counter-increment: section 2; */
+
 	/* counter() function */
 	content: counter(section) ". ";
 }
@@ -39,6 +44,26 @@ body {
 	counter-reset: list2;
 	list-style-type: none;
 }
+
+/*
+available styles
+Source: https://css-tricks.com/numbering-in-style/
+
+disc (• • •)
+circle (○ ○ ○)
+square (▪ ▪ ▪)
+decimal (1 2 3)
+decimal-leading-zero (01, 02, 03)
+lower-roman (i ii iii)
+upper-roman (I II III)
+lower-greek (α β γ)
+lower-latin (a b c)
+upper-latin (A B C)
+armenian (Ա Բ Գ)
+georgian (ა ბ გ)
+lower-alpha (a b c)
+upper-alpha (A B C)
+*/
 
 .example3 li::before {
 	counter-increment: list2;
