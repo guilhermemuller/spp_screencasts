@@ -1,0 +1,58 @@
+/* base styles */
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: "";
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.example1 {
+	background: #CCC;
+	padding: 3em 0;
+}
+
+.example2 {
+	background: #FFC;
+}
+
+.example3 {
+	height: 100vh;
+	background: green;
+	position: relative;
+}
+
+.example4 {
+	background: #CCC;
+	padding: 2em;
+}
+
+/*
+-- Example styles
+*/
+
+/* example 1 */
+
+
+
+/* example 2 */
+
+
+
+/* example 3 */
+
+
+
+/* example 4 */
+
