@@ -39,20 +39,47 @@ body {
 }
 
 /*
--- Example styles
+-- Relevant example styles
 */
 
 /* example 1 */
 
-
+.example1 .container {
+	background: #FFF;
+	padding: 1em;
+	margin: 0 auto;
+}
 
 /* example 2 */
 
-
+.example2 .col {
+	background: #000;
+	height: 500px;
+	color: #FFF;
+	border: 5px solid red;
+}
 
 /* example 3 */
 
-
+.example3 .container {
+	background: #FFF;
+	padding: 1em;
+	text-align: center;
+	width: 500px;
+	height: 70px;
+	margin: 0 auto;
+}
 
 /* example 4 */
 
+.example4 .col1, .example4 .col2 {
+	height: 500px;
+}
+
+.example4 .col1 {
+	background: #FFC;
+}
+
+.example4 .col2 {
+	background: #FFF;
+}
