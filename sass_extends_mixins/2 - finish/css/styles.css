@@ -23,7 +23,7 @@
   clear: both;
 }
 
-/* example clearfix placeholder and extend */
+/* example clearfix extend */
 .clearfix-base:before, .clearfix2:before, .row2:before, .group2:before, .clearfix-base:after, .clearfix2:after, .row2:after, .group2:after {
   content: " ";
   display: table;
