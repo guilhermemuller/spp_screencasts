@@ -9,7 +9,7 @@
 	overflow: hidden;
 }
 
-.video-background {
+.video-background, .overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -18,11 +18,6 @@
 }
 
 .overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
 	background: repeating-linear-gradient(0deg, rgba(0,0,255,0.3), transparent);
 	background-size: 100% 5px;
 }
@@ -30,14 +25,14 @@
 .title {
 	font-size: 1.5em;
 	position: absolute;
-	top: calc(50% - 2.5em);
-	left: calc(50% - 10em);
 	background: rgba(255, 255, 255, 0.2);
 	width: 20em;
 	height: 5em;
-	display: table;
 	color: #FFF;
 	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+	top: calc(50% - 2.5em);
+	left: calc(50% - 10em);
+	display: table;
 }
 
 .title h1 {
