@@ -20,8 +20,9 @@
 			video.style.width = "auto";
 		}
 
-		// center the video vertically
+		// center the video
 		video.style.top = (((video.offsetHeight - container_height) / 2) * -1) + "px";
+		video.style.left = (((video.offsetWidth - container_width) / 2) * -1) + "px";
 	}
 
 	// events
