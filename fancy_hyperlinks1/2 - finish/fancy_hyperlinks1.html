@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fancy Hyperlinks with Background-image and Gradients</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+	<style>
+		body {
+			font-family: Pacifico, sans-serif;
+			text-align: center;
+			padding: 2em;
+			font-size: 250%;
+			background: #df6145;
+		}
+
+		a {
+			text-decoration: none;
+			color: #FFF;
+			text-shadow: 2px 2px rgba(0,0,0,0.5), 4px 0 #df6145, -4px 0 #df6145;
+			background: linear-gradient(#FFF, #FFF) no-repeat right 1.5em;
+			background-size: 100% 3px;
+			transition: background 0.3s ease;
+		}
+
+		a:hover {
+			background-size: 0% 3px;
+		}
+	</style>
+</head>
+<body>
+	
+	<a href="#">Fancy Hyperlink</a>
+
+</body>
+</html>

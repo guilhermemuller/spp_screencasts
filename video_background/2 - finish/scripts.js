@@ -21,8 +21,8 @@
 		}
 
 		// center the video
-		video.style.top = (((video.offsetHeight - container_height) / 2) * -1) + "px";
-		video.style.left = (((video.offsetWidth - container_width) / 2) * -1) + "px";
+		video.style.top = ((video.offsetHeight/2 - container_height/2) * -1) + "px";
+		video.style.left = ((video.offsetWidth/2 - container_width/2) * -1) + "px";
 	}
 
 	// events

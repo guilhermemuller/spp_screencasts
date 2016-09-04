@@ -1,0 +1,109 @@
+/*
+-- Example Styles
+*/
+
+.example-blur img {
+	
+}
+
+.example-brightness img {
+	
+}
+
+.example-contrast img {
+	
+}
+
+.example-grayscale img {
+	
+}
+
+.example-hue-rotate img {
+	
+}
+
+.example-sepia img {
+	
+}
+
+.example-invert img {
+	
+}
+
+.example-saturate img {
+	
+}
+
+.example-drop-shadow img {
+	
+}
+
+.example-drop-shadow img:nth-child(2) {
+	
+}
+
+.example-opacity img {
+	
+}
+
+.example-combined img {
+	
+}
+
+@keyframes filter-animation {
+	0% {
+		
+	}
+
+	100% {
+		
+	}
+}
+
+.example-animated img {
+	
+}
+
+/*
+-- Base Styles
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	text-align: center;
+	max-width: 30em;
+	margin: 1em auto;
+}
+
+.example {
+	margin: 1.5em auto;
+}
+
+.example img {
+	display: block;
+	margin: 1em auto;
+	max-width: 30em;
+}
+
+.grid {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.grid img {
+	width: 45%;
+}
+
+h2 {
+	margin-bottom: 0.5em;
+}

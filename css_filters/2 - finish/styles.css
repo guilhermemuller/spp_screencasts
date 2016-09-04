@@ -1,0 +1,124 @@
+/*
+-- Example Styles
+*/
+
+.example-blur img {
+	-webkit-filter: blur(8px);
+	filter: blur(8px);
+}
+
+.example-brightness img {
+	-webkit-filter: brightness(2);
+	filter: brightness(2);
+}
+
+.example-contrast img {
+	-webkit-filter: contrast(2);
+	filter: contrast(2);
+}
+
+.example-grayscale img {
+	-webkit-filter: grayscale(0.8);
+	filter: grayscale(0.8);
+}
+
+.example-hue-rotate img {
+	-webkit-filter: hue-rotate(90deg);
+	filter: hue-rotate(90deg);
+}
+
+.example-sepia img {
+	-webkit-filter: sepia(0.8);
+	filter: sepia(0.8);
+}
+
+.example-invert img {
+	-webkit-filter: invert(1);
+	filter: invert(1);
+}
+
+.example-saturate img {
+	-webkit-filter: saturate(3);
+	filter: saturate(3);
+}
+
+.example-drop-shadow img {
+	-webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+}
+
+.example-drop-shadow img:nth-child(2) {
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+	-webkit-filter: none;
+	        filter: none;
+}
+
+.example-opacity img {
+	-webkit-filter: opacity(0.5);
+	filter: opacity(0.5);
+}
+
+.example-combined img {
+	-webkit-filter: hue-rotate(-60deg) saturate(1.5) contrast(2);
+	filter: hue-rotate(-60deg) saturate(1.5) contrast(2);
+}
+
+@keyframes filter-animation {
+	0% {
+		-webkit-filter: saturate(1) blur(0);
+		filter: saturate(1) blur(0);
+	}
+
+	100% {
+		-webkit-filter: saturate(4) blur(10px);
+		filter: saturate(4) blur(10px);
+	}
+}
+
+.example-animated img {
+	animation: filter-animation 1.5s alternate infinite;
+}
+
+/*
+-- Base Styles
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	text-align: center;
+	max-width: 30em;
+	margin: 1em auto;
+}
+
+.example {
+	margin: 1.5em auto;
+}
+
+.example img {
+	display: block;
+	margin: 1em auto;
+	max-width: 30em;
+}
+
+.grid {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.grid img {
+	width: 45%;
+}
+
+h2 {
+	margin-bottom: 0.5em;
+}

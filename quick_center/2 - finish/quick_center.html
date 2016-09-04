@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quick centering technique</title>
+	<style>
+		body {
+			font-family: sans-serif;
+			padding: 2em;
+			font-size: 150%;
+		}
+
+		.container {
+			background: #000;
+			height: 20em;
+			position: relative;
+		}
+
+		.element {
+			background: #FFF;
+			padding: 1.5em;
+			text-align: center;
+			border: 5px solid #808080;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	</style>
+</head>
+<body>
+	
+<div class="container">
+	<div class="element">
+		Center me!
+	</div>
+</div>
+
+</body>
+</html>
