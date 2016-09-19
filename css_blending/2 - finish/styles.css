@@ -1,0 +1,169 @@
+/*
+-- Example Styles
+*/
+
+.bg-multiply {
+	background: #84D0FF url(bright.jpg) no-repeat center center;
+	background-blend-mode: multiply;
+}
+
+.bg-screen {
+	background: #84D0FF url(dark.jpg) no-repeat center center;
+	background-blend-mode: screen;
+}
+
+.bg-overlay
+,.bg-darken
+,.bg-lighten
+,.bg-color-dodge
+,.bg-color-burn
+,.bg-hard-light
+,.bg-soft-light
+,.bg-difference
+,.bg-exclusion
+,.bg-hue
+,.bg-saturation
+,.bg-color
+,.bg-luminosity {
+	background: url(texture.jpg) no-repeat center center, url(balanced.jpg) no-repeat center center;
+}
+
+.bg-overlay {
+	background-blend-mode: overlay;
+}
+
+.bg-darken {
+	background-blend-mode: darken;
+}
+
+.bg-lighten {
+	background-blend-mode: lighten;
+}
+
+.bg-color-dodge {
+	background-blend-mode: color-dodge;
+}
+
+.bg-color-burn {
+	background-blend-mode: color-burn;
+}
+
+.bg-hard-light {
+	background-blend-mode: hard-light;
+}
+
+.bg-soft-light {
+	background-blend-mode: soft-light;
+}
+
+.bg-difference {
+	background-blend-mode: difference;
+}
+
+.bg-exclusion {
+	background-blend-mode: exclusion;
+}
+
+.bg-hue {
+	background-blend-mode: hue;
+}
+
+.bg-saturation {
+	background-blend-mode: saturation;
+}
+
+.bg-color {
+	background-blend-mode: color;
+}
+
+.bg-luminosity {
+	background-blend-mode: luminosity;
+}
+
+.bg-multiple {
+	background: url(bright.jpg) no-repeat center center, url(dark.jpg) no-repeat center center, #F00 url(balanced.jpg) no-repeat center center;
+	background-blend-mode: multiply, screen, overlay;
+}
+
+.mix-screen p {
+	mix-blend-mode: screen;
+}
+
+.mix-multiply p {
+	mix-blend-mode: multiply;
+}
+
+.isolate {
+	isolation: isolate;
+}
+
+/*
+-- Base Styles
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+h1, h2 {
+	margin-bottom: 1rem;
+}
+
+h1 {
+	margin-top: 1rem;
+}
+
+.example {
+	width: 640px;
+	margin: 2em auto;
+}
+
+.example > div {
+	height: 427px;
+}
+
+.grid {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+}
+
+.mix-screen, .mix-multiply {
+	position: relative;
+	font-size: 2.5em;
+}
+
+.mix-screen p, .mix-multiply p, .isolate {
+	position: absolute;
+	top: 0.5em;
+	left: 0.5em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.mix-screen p {
+	color: #000;
+	text-shadow: 0 0 10px rgba(255,255,255,0.8);
+}
+
+.mix-multiply p {
+	color: #FFF;
+	-webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.8));
+	filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.8));
+}
+
+small {
+	display: block;
+	padding: 2em;
+	font-size: 70%;
+	margin-top: 10em;
+}
