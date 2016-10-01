@@ -1,0 +1,141 @@
+/*
+-- Example Styles
+*/
+
+/* source: https://github.com/h5bp/html5-boilerplate/blob/master/dist/css/main.css */
+input[type="checkbox"], input[type="radio"] {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/* for more accessibility, it's best to style the focus pseudo class */
+input[type="checkbox"]:focus + label, input[type="radio"]:focus + label {
+	outline: 1px dotted gray;
+}
+
+/* example1 */
+
+.example1 label {
+	font-size: 1.5em;
+	background: #EEE;
+	padding: 0.5em 1em;
+	transition: background 0.2s ease;
+}
+
+.example1 label::before {
+	content: "";
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	padding: 0.12em;
+	margin-right: 0.5em;
+	vertical-align: -3px;
+	border: 3px solid #000;
+	background-color: transparent;
+	background-clip: content-box;
+	transition: background 0.2s ease;
+}
+
+.example1 input:checked + label {
+	background: #D8E4FF;
+}
+
+.example1 input:checked + label::before {
+	background-color: #000;
+}
+
+/* example2 */
+
+.example2 label {
+	font-size: 1.5em;
+	color: #FFF;
+	background: #F60;
+	padding: 0.5em 1em;
+	text-transform: uppercase;
+	border-radius: 0.5em;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	box-shadow: 2px 2px 0 2px #963C00;
+	transition: all 0.2s ease;
+}
+
+.example2 input:checked + label {
+	box-shadow: 0 0 0 #963C00, inset 3px 3px 3px #963C00;
+	transform: translate(3px, 3px);
+}
+
+/* example3 */
+
+.example3 ul {
+	list-style: none;
+}
+
+.example3 li {
+	border-bottom: 5px solid #3559BA;
+}
+
+.example3 label {
+	display: block;
+	background: #3F72FF;
+	color: #FFF;
+	font-size: 1.25em;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	padding: 0.5rem 1rem;
+	transition: background 0.2s ease;
+}
+
+.example3 label:hover {
+	text-decoration: underline;
+}
+
+.example3 .content {
+	display: none;
+	background: #EEE;
+	padding: 1em;
+}
+
+.example3 input:checked ~ .content {
+	display: block;
+}
+
+.example3 input:checked + label {
+	background: #608BFF;
+}
+
+/*
+-- Base Styles
+*/
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	width: 640px;
+	margin: 2em auto;
+}
+
+h1, h2 {
+	margin-bottom: 1rem;
+}
+
+h1 {
+	margin-top: 1rem;
+}
+
+.example {
+	margin: 2em 0;
+}
+
+label {
+	cursor: pointer;
+	display: inline-block;
+}
