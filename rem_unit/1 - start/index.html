@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The rem unit</title>
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		
+		html {
+			font-size: 100%; /* or 1em */
+		}
+
+		body {
+			padding: 1em;
+			font-family: sans-serif;
+		}
+
+		h1 {
+			font-size: 2em; /* 2*16 = 32 */
+		}
+
+		h1 span {
+			display: block;
+			font-style: italic;
+			font-size: 0.4375em; /* 14/32 = .4375 */
+		}
+
+		h1, h2 {
+			margin-bottom: 1em;
+		}
+
+		p {
+			margin-bottom: 1.5em;
+		}
+	</style>
+</head>
+<body>
+	
+	<h1>
+		Main Title
+		<span>Main title complement</span>
+	</h1>
+
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia adipisci doloremque voluptatibus voluptate mollitia, enim ad. Nostrum quaerat laudantium tempora nisi omnis nesciunt expedita, unde. Possimus cupiditate necessitatibus architecto, quae.
+	</p>
+
+	<h2>
+		Subtitle
+	</h2>
+
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia adipisci doloremque voluptatibus voluptate mollitia, enim ad. Nostrum quaerat laudantium tempora nisi omnis nesciunt expedita, unde. Possimus cupiditate necessitatibus architecto, quae.
+	</p>
+
+</body>
+</html>
