@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fancy Buttons</title>
+	<style>
+		
+		body {
+			padding: 2em;
+			font-size: 200%;
+			font-family: sans-serif;
+			text-align: center;
+		}
+
+		button, a {
+			font-size: inherit;
+			font-family: inherit;
+			line-height: 1.15;
+			cursor: pointer;
+		}
+
+		.button {
+			display: inline-block;
+			border: 0;
+			margin: 0;
+			padding: 0.5em 1em;
+			text-decoration: none;
+			color: #FFF;
+			background: #F60;
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+			border-radius: 0.5em;
+			box-shadow: 3px 3px 0 3px #930;
+			transition: box-shadow 0.3s ease, transform 0.3s ease;
+		}
+
+		.button:active {
+			box-shadow: 0 0 0 0 #930,
+						inset 4px 4px 4px #930;
+			transform: translate(6px, 6px);
+		}
+
+	</style>
+</head>
+<body>
+	
+	<h1><code>a</code> tag</h1>
+
+	<a href="#" class="button">
+		Press me
+	</a>
+
+	<h1><code>button</code> tag</h1>
+
+	<button class="button">
+		Press me
+	</button>
+
+</body>
+</html>
